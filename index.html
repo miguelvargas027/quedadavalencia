@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reunión del equipo | Valencia</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --soft: #1f2937;
+      --text: #e5e7eb;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+      --accent-2: #22c55e;
+      --white: #ffffff;
+      --shadow: 0 18px 50px rgba(0,0,0,.25);
+      --radius: 22px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: linear-gradient(180deg, #0b1120 0%, #111827 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      width: min(1100px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 32px 0 56px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, rgba(56,189,248,.18), rgba(34,197,94,.14));
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 28px;
+      padding: 36px;
+      box-shadow: var(--shadow);
+      margin-bottom: 24px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      font-size: 12px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    h1, h2, h3 { margin: 0 0 12px; line-height: 1.15; }
+    h1 { font-size: clamp(2rem, 5vw, 3.6rem); }
+    h2 { font-size: clamp(1.3rem, 3vw, 2rem); }
+    h3 { font-size: 1.05rem; }
+
+    p { margin: 0 0 14px; }
+    .muted { color: var(--muted); }
+
+    .grid {
+      display: grid;
+      gap: 20px;
+    }
+
+    .grid-2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .grid-3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .card {
+      background: rgba(17, 24, 39, .92);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: var(--shadow);
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: var(--white);
+      color: #0f172a;
+      text-decoration: none;
+      padding: 12px 18px;
+      border-radius: 999px;
+      font-weight: 700;
+      transition: transform .18s ease, opacity .18s ease;
+    }
+
+    .btn.secondary {
+      background: transparent;
+      color: var(--text);
+      border: 1px solid rgba(255,255,255,.14);
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+      opacity: .95;
+    }
+
+    .timeline-item {
+      position: relative;
+      padding-left: 18px;
+      margin-bottom: 16px;
+    }
+
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: .55em;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    li + li { margin-top: 8px; }
+
+    .pill {
+      display: inline-block;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.08);
+      color: var(--text);
+      font-size: .9rem;
+      margin: 0 8px 8px 0;
+    }
+
+    .highlight {
+      border-left: 4px solid var(--accent-2);
+      padding-left: 14px;
+      color: var(--text);
+    }
+
+    .contact a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    footer {
+      margin-top: 24px;
+      text-align: center;
+      color: var(--muted);
+      font-size: .95rem;
+    }
+
+    @media (max-width: 820px) {
+      .grid-2, .grid-3 { grid-template-columns: 1fr; }
+      .hero { padding: 24px; }
+      .card { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <section class="hero">
+      <span class="eyebrow">Reunión del equipo</span>
+      <h1>Valencia · 3 al 6 de abril</h1>
+      <p class="muted">Toda la información clave del alojamiento, logística de llegada y plan general del fin de semana en un solo lugar.</p>
+      <div class="buttons">
+        <a class="btn" href="https://www.airbnb.co.ve/rooms/1230454216141932696?adults=7&check_in=2026-04-03&check_out=2026-04-05&guests=7&search_mode=regular_search&source_impression_id=p3_1772803043_P3sm_YA7LM2PYJIw&previous_page_section_name=1000&federated_search_id=01a27588-ac23-4802-a286-c383752efe5c" target="_blank" rel="noopener noreferrer">Ver Airbnb</a>
+        <a class="btn secondary" href="https://www.google.com/maps/search/?api=1&query=10.243540596490794%2C-68.00615631043911" target="_blank" rel="noopener noreferrer">Ver ubicación</a>
+        <a class="btn secondary" href="https://www.instagram.com/caney_villaflorencia/" target="_blank" rel="noopener noreferrer">Ver Instagram piscina</a>
+      </div>
+    </section>
+
+    <section class="grid grid-2">
+      <article class="card">
+        <h2>Alojamiento</h2>
+        <p><strong>Zona:</strong> Mañongo, Valencia.</p>
+        <p><strong>Check-in:</strong> viernes 3 de abril, 3:00 p. m.</p>
+        <p><strong>Check-out:</strong> lunes 6 de abril, 12:00 m.</p>
+        <p class="highlight">El alojamiento será el punto base del fin de semana para el equipo que se queda en el townhouse.</p>
+      </article>
+
+      <article class="card">
+        <h2>Logística de llegada</h2>
+        <ul>
+          <li>Estaré pendiente de la llegada de todos.</li>
+          <li>Quienes lleguen en transporte, yo misma los recogeré.</li>
+          <li>Quienes lleguen en carro particular y lleguen a la hora del check-in, pueden ir directo al townhouse.</li>
+          <li>Si alguien llega antes del check-in, igual coordinamos con calma para acompañar su llegada.</li>
+          <li>Se creará un canal para mantener la comunicación activa durante todo el fin de semana.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="grid grid-2" style="margin-top: 20px;">
+      <article class="card">
+        <h2>Plan general</h2>
+        <div class="timeline-item">
+          <h3>Viernes 3 de abril</h3>
+          <p>Llegada del equipo, organización del grupo y plan flexible para almorzar, cenar ynocturna. La idea es movernos con comodidad y coordinar todo según cómo vaya llegando cada quien.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Sábado 4 de abril · Día de piscina</h3>
+          <p>Estaremos en la piscina desde las <strong>10:00 a. m.</strong> hasta las <strong>8:00 p. m.</strong>, con plan de pasar el día completo compartiendo.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Domingo 5 de abril</h3>
+          <p>Dinámica libre del equipo que se queda en el townhouse, según lo que decidan organizar entre ustedes.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>Comida y organización</h2>
+        <ul>
+          <li>La organización de comidas del viernes y los desayunos queda entre las personas que se alojan en el townhouse.</li>
+          <li>Para el día de piscina se hará una <strong>parrillada</strong> para el grupo invitado.</li>
+          <li>La compra general incluirá carne, pollo, chorizo, ensalada sencilla, pico de gallo y salsas.</li>
+          <li>Las bebidas personales corren por cuenta de cada quien.</li>
+          <li>Se calculará el total de la parrilla según la cantidad final de asistentes para definir cuánto corresponde aportar por persona.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="grid grid-2" style="margin-top: 20px;">
+      <article class="card">
+        <h2>Qué llevar</h2>
+        <span class="pill">Ropa cómoda</span>
+        <span class="pill">Traje de baño</span>
+        <span class="pill">Artículos personales</span>
+        <span class="pill">Cargador</span>
+        <span class="pill">Cédula</span>
+      </article>
+
+      <article class="card contact">
+        <h2>Contacto y coordinación</h2>
+        <p><strong>Yessica</strong></p>
+        <p><a href="tel:+584214742735">0412-474-2735</a></p>
+        <p class="muted">Todos deben escribir por el canal que se creará para estar comunicados durante la llegada, la estadía y la coordinación general.</p>
+      </article>
+    </section>
+
+    <footer>
+      Documento de apoyo para la reunión del equipo en Valencia.
+    </footer>
+  </main>
+</body>
+</html>
